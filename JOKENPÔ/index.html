@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+   
+     <div class="choices"> <!-- Div que agrupa os botões de escolha -->
+        <div class="box"> 
+        <h1> VAMOS JOGAR !!!</h1>
+        <h2> Escolha a baixo: 👇</h2>
+        <h3> 🎮🕹️</h3>
+        <button data-choice="pedra"> Pedra </button> <!-- Aqui é um botão para escolher pedra ... No caso, utilizamos um atributo personalziado que começa com data- (que armazena informações extras para acessar com JavaScript) -->
+        <button data-choice="papel"> Papel </button>
+        <button data-choice="tesoura"> Tesoura </button>
+        <!-- Texto que informa a escolha de cada jogador -->
+        <p id="player1-choice"> Jogador 1: Escolha sua jogada </p>
+         <p id="player2-choice"> Jogador 2: Escolha sua jogada </p>
+        <!-- Texto que exibe o resultado -->
+        <p id="Winner"></p>
+        </div>
+     </div>
+     <script src="script.js"></script>
+     
+</body>
+</html>

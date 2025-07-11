@@ -1,0 +1,104 @@
+/* Aplicando uma configuração básica a todos os elementos */
+*{
+    box-sizing: border-box; /* Inclui bordas e padding no tamanho total do elemento */
+    margin: 0;
+    padding: 0
+    
+}
+/* Estilizando o corpo da página */
+body{
+
+    font-family: Arial, Helvetica, sans-serif; /* define a fonte padrão */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* gradiente dark ciano-azulado */
+    color: white;
+}
+
+/* Estilo do título */
+
+h1 {
+    margin-bottom: 1rem; /* rem= "root em" valor relativo ao tamanho de componentes emem html */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Valores são as direções da sombra e cor */ 
+
+}
+
+/* Container dos botões da escolha */
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 40px 0;
+}
+
+
+/* Estilo dos botões aprimorado */
+button {
+    background: linear-gradient(145deg, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 132, 255, 0.6);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efeito visual ao passar o mouse */
+
+button:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.9);
+}
+/* Estilo dos parágrafos de escolha */
+
+p{
+    font-size: 1.2rem;
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+    min-height: 1.5rem; /* Garante altura mínima para evitar "pulos" quando o texto muda */
+    text-align: center; /* Centraliza o texto */
+    text-shadow: 0 0 6px blue; /* Sombra azul para destacar o texto */
+}
+
+/* Estilo para o texto que mostra o vencedor */
+
+#winner{
+    font-weight: 700; /* Negrito Fonte */
+    font-size: 1.5rem; /* Fonte maior para destaque */
+    margin-top: 1.5rem; /* Espaço acima do texto */
+    color: grey; /* Cinza com transparência */
+    text-shadow: 
+    0 0 10px turquoise, /* camada 1: brilho ciano suave */
+    0 0 20px turquoise, /* camada 2: brilho mais intenso */
+    0 0 30px turquoise; /* camada 3: brilho ainda mais forte */
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+    padding: 40px 30px;
+    margin: auto;
+    width: 60%;
+    animation: aparecer 0.8s ease-out;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.02);
+}
+
+/* Animação de entrada */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
