@@ -1,0 +1,19 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: url(https://cdn.pixabay.com/photo/2024/05/26/15/27/anime-8788959_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    margin: 200px;
+}
+
+canvas{
+    background: rgb(49, 187, 168);
+    display: block;
+    margin: 20px auto;
+    border: 2px solid white;
+
+}
