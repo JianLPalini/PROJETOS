@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hidro RS - Monitoramento de Rios</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Cabeçalho ===== -->
+  <header>
+    <div class="topbar">
+      <div class="logo">HYDRO RS</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#mapa">Mapa</a></li>
+          <li><a href="#meteorologia">Meteorologia</a></li>
+          <li><a href="#medicoes">Medições</a></li>
+          <li><a href="#app">App</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#login" class="login-btn">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="inicio">
+    <h1>Monitoramento Inteligente dos Rios do RS</h1>
+    <p>Acompanhe em tempo real o nível dos rios e as condições climáticas.</p>
+    <a href="#medicoes" class="btn-main">Ver medições</a>
+  </section>
+
+  <!-- ===== Carrossel ===== -->
+  <div class="carousel">
+    <div class="carousel-track">
+      <div class="carousel-item">⚠️ Alerta de cheia no Rio Taquari</div>
+      <div class="carousel-item">🌧️ Previsão de chuvas intensas em Porto Alegre</div>
+      <div class="carousel-item">📊 Nível do Rio Gravataí em elevação</div>
+      <div class="carousel-item">💨 Ventos fortes no litoral</div>
+      <div class="carousel-item">📢 Alerta: Evacuação preventiva em Encantado</div>
+      <div class="carousel-item">☀️ Tempo firme previsto após o domingo</div>
+    </div>
+  </div>
+
+  <!-- ===== Conteúdo Principal ===== -->
+  <section class="section conteudo-com-lateral">
+    <!-- ==== Cards de Meteorologia ==== -->
+    <div id="meteorologia">
+      <h2>Previsão do Tempo</h2>
+      <div class="cards">
+        <div class="card card-meteorologia">
+          <h3>Radar Meteorológico</h3>
+          <iframe src="https://www.inmet.gov.br/sonabra/pg_radar.php" width="100%" height="300"></iframe>
+        </div>
+        <div class="card card-meteorologia">
+          <h3>Clima Hoje</h3>
+          <img src="https://www.climatempo.com.br/images/icones/tempo/nublado.png" width="80" alt="Clima" />
+          <p>Máxima: 23°C<br />Mínima: 15°C</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==== Lateral de Notícias ==== -->
+    <aside class="ultimas-noticias">
+      <h3>Últimas Notícias</h3>
+      <ul>
+        <li>🛑 Cheia no Rio Caí preocupa moradores.</li>
+        <li>⚡ Alerta de tempestade para região central.</li>
+        <li>🚨 Defesa Civil envia novos avisos.</li>
+        <li>🌧️ Chuva acumulada passa dos 100mm.</li>
+      </ul>
+    </aside>
+  </section>
+
+  <!-- ===== Cards de Medições ===== -->
+  <section class="section" id="medicoes">
+    <h2>Medições dos Rios</h2>
+    <div class="cards">
+      <div class="card card-medicoes">
+        <h3>Rio Taquari</h3>
+        <p>Nível atual: 7,5m</p>
+        <span class="alerta critico">Crítico</span>
+      </div>
+      <div class="card card-medicoes">
+        <h3>Rio Jacuí</h3>
+        <p>Nível atual: 4,2m</p>
+        <span class="alerta moderado">Moderado</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Rodapé ===== -->
+  <footer>
+    <p>&copy; 2025 Hidro RS. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
